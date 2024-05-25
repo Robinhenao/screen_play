@@ -1,8 +1,5 @@
 buildscript {
     repositories {
-        maven {
-            url "https://artifactory.apps.bancolombia.com/maven-bancolombia/"
-        }
         mavenLocal()
         mavenCentral()
     }
@@ -11,7 +8,6 @@ buildscript {
 plugins {
 	id 'io.github.jumosqu12.screenplayarchitecture' version '1.0.1'
 	id 'java'
-    id 'eclipse'
     id 'idea'
 }
 
@@ -20,16 +16,12 @@ group 'co.com.udea.certificacion'
 sourceCompatibility = 11
 
 repositories {
-    maven {
-        url "https://artifactory.apps.bancolombia.com/maven-bancolombia/"
-    }
     mavenLocal()
 }
 
 ext {
     serenityVersion = '4.1.0'
     serenityCucumberVersion = '4.1.0'
-    lombokVersion = '1.18.22'
     junit = '4.13.2'
     hamcrest = '1.3'
     serenityWebVersion = '4.1.0'
@@ -47,12 +39,7 @@ dependencies {
     testImplementation "org.hamcrest:hamcrest-all:$rootProject.ext.hamcrest"
     testImplementation("io.github.bonigarcia:webdrivermanager:5.4.1")
 
-//Lombok dependencies
-    compileOnly "org.projectlombok:lombok:${lombokVersion}"
-    annotationProcessor  "org.projectlombok:lombok:${lombokVersion}"
-    testCompileOnly  "org.projectlombok:lombok:${lombokVersion}"
-
-    //Additional library
-    //End Additional library
+    testImplementation group: 'io.cucumber', name: 'cucumber-java', version: '7.15.0'
+    testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '7.15.0'
 
 }
