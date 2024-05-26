@@ -36,12 +36,11 @@ dependencies {
     implementation "net.serenity-bdd:serenity-screenplay:$rootProject.ext.serenityVersion"
     implementation "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityCucumberVersion"
     implementation "net.serenity-bdd:serenity-screenplay-webdriver:$rootProject.ext.serenityWebVersion"
-    implementation group: 'net.serenity-bdd', name: 'serenity-core', version: '4.1.14'
-    implementation group: 'net.serenity-bdd', name: 'serenity-junit', version: '4.1.14'
+
     //Test compilation
     testImplementation "junit:junit:$rootProject.ext.junit"
     testImplementation "org.hamcrest:hamcrest-all:$rootProject.ext.hamcrest"
-    testImplementation("io.github.bonigarcia:webdrivermanager:5.4.1")
+    
 
     testImplementation group: 'io.cucumber', name: 'cucumber-java', version: '7.15.0'
     testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '7.15.0'
