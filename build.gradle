@@ -1,7 +1,6 @@
 buildscript {
     repositories {
-        //mavenLocal()
-
+        mavenLocal()
         mavenCentral()
     }
 }
@@ -18,7 +17,6 @@ sourceCompatibility = 11
 
 repositories {
     mavenCentral()
-
     mavenLocal()
 }
 
@@ -40,7 +38,7 @@ dependencies {
     //Test compilation
     testImplementation "junit:junit:$rootProject.ext.junit"
     testImplementation "org.hamcrest:hamcrest-all:$rootProject.ext.hamcrest"
-    
+
 
     testImplementation group: 'io.cucumber', name: 'cucumber-java', version: '7.15.0'
     testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '7.15.0'
