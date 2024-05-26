@@ -1,5 +1,5 @@
 package co.com.udea.certificacion.autenticacion.stepdefinitions;
 
-public class StepDefinition {
+public class CreateFlightStepDefinition {
 
 }
