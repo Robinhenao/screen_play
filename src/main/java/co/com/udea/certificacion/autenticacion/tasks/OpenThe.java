@@ -5,6 +5,7 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Open;
+import net.serenitybdd.screenplay.actions.OpenUrl;
 
 
 public class OpenThe implements Task {
@@ -17,7 +18,6 @@ public class OpenThe implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Open.browserOn(page));
     }
-
     public  static OpenThe browser(PageObject page){
         return Tasks.instrumented(OpenThe.class,page);
     }
