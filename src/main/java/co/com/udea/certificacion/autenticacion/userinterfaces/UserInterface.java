@@ -7,7 +7,5 @@ import org.openqa.selenium.By;
 public class UserInterface extends PageObject {
     private UserInterface(){}
 
-    public static final Target INPUT_TEXT = Target.the("Text input").located(By.name(""));
-
 
 }
