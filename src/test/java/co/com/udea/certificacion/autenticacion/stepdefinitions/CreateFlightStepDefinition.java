@@ -1,6 +1,7 @@
 package co.com.udea.certificacion.autenticacion.stepdefinitions;
 
-import co.com.udea.certificacion.autenticacion.tasks.FindOutThe;
+import co.com.udea.certificacion.autenticacion.tasks.EnterDataFormCreate;
+import co.com.udea.certificacion.autenticacion.tasks.OpenFormCreate;
 import co.com.udea.certificacion.autenticacion.tasks.OpenThe;
 import co.com.udea.certificacion.autenticacion.userinterfaces.FrontPage;
 import io.cucumber.java.Before;
@@ -28,18 +29,19 @@ public class CreateFlightStepDefinition {
         setTheStage(new OnlineCast());
     }
 
-    @Given("estoy en la pagina de creacion de vuelos directos")
-    public void estoyEnLaPaginaDeCreacionDeVuelosDirectos() {
+    @Given("que ingrese a la pagina web y pulse el boton de crear vuelo")
+    public void queIngreseALaPaginaWebYPulseElBotonDeCrearVuelo() {
         admin.attemptsTo(OpenThe.browser(new FrontPage()));
+        admin.attemptsTo(OpenFormCreate.openFormCreate());
     }
 
     @When("ingreso la informacion obligatoria requerida en los campos del formulario")
     public void ingresoLaInformacionObligatoriaRequeridaEnLosCamposDelFormulario() {
-        admin.attemptsTo(FindOutThe.wordKey());
+        admin.attemptsTo(EnterDataFormCreate.enterFormData());
     }
 
-    @Then("el sistema deberia mostrar un mensaje de confirmacion de que el vuelo ha sido creado exitosamente")
-    public void elSistemaDeberiaMostrarUnMensajeDeConfirmacionDeQueElVueloHaSidoCreadoExitosamente() {
+    @Then("el sistema confirma que el vuelo fue creado exitosamente")
+    public void elSistemaConfirmaQueElVueloFueCreadoExitosamente() {
 
     }
 
