@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="view existing flights" skipped="0" tests="1" time="0.21" timestamp="2024-05-27 09:17:22"><testcase name="View the list of flights created in the flight management page"><failure message="&#10;Expected: a string containing &quot;asb-123&quot;&#10;     but: was &quot;vuelo-2233&quot;" type="java.lang.AssertionError">
-Expected: a string containing "asb-123"
-     but: was "vuelo-2233"</failure><system-err>
-Expected: a string containing "asb-123"
-     but: was "vuelo-2233"&#13;
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><testsuite errors="0" failures="1" name="view existing flights" skipped="0" tests="1" time="3.89" timestamp="2024-05-27 10:20:38"><testcase name="View the list of flights created in the flight management page"><failure message="&#10;Expected: a string containing &quot;True&quot;&#10;     but: was &quot;False&quot;" type="java.lang.AssertionError">
+Expected: a string containing "True"
+     but: was "False"</failure><system-err>
+Expected: a string containing "True"
+     but: was "False"&#13;
 co.com.udea.certificacion.autenticacion.stepdefinitions.ViewExistingFlightsStepDefinition.iCanSeeTheListOfExistingFlights(ViewExistingFlightsStepDefinition.java:49)&#13;
 worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)&#13;
 worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)&#13;

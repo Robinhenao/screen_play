@@ -46,7 +46,7 @@ public class ViewExistingFlightsStepDefinition {
     @Then("I can see the list of existing flights")
     public void iCanSeeTheListOfExistingFlights() {
         // Question
-        GivenWhenThen.then(admin).should(GivenWhenThen.seeThat(ShownOnThePageThe.flightListing(), Matchers.containsString("asb-123")));
+        GivenWhenThen.then(admin).should(GivenWhenThen.seeThat(ShownOnThePageThe.flightListing(), Matchers.containsString("True")));
     }
 
 

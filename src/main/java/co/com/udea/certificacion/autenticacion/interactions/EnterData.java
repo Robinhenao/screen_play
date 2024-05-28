@@ -13,7 +13,7 @@ public class EnterData  implements Interaction {
 
     @Override
     public <T extends Actor> void performAs(T actor) {
-        actor.attemptsTo(Enter.theValue("ASB-123").into(CREATE_NUMERO_VUELO));
+        actor.attemptsTo(Enter.theValue("AKN-123").into(CREATE_NUMERO_VUELO));
         actor.attemptsTo(Enter.theValue("Internacional").into(CREATE_TIPO_VUELO));
         actor.attemptsTo(Enter.theValue("1").into(CREATE_AEROPUERTO_ORIGEN));
         actor.attemptsTo(Enter.theValue("2").into(CREATE_AEROPUERTO_DESTINO));
