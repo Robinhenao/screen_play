@@ -18,8 +18,8 @@ public class EnterData  implements Interaction {
         actor.attemptsTo(Enter.theValue("1").into(CREATE_AEROPUERTO_ORIGEN));
         actor.attemptsTo(Enter.theValue("2").into(CREATE_AEROPUERTO_DESTINO));
         actor.attemptsTo(Enter.theValue("2").into(CREATE_TIPO_AVION));
-        actor.attemptsTo(Enter.theValue("2024-05-27T15:30").into(CREATE_FECHAS_SALIDA));
-        actor.attemptsTo(Enter.theValue("2024-05-28T15:30").into(CREATE_FECHAS_LLEGADA));
+        actor.attemptsTo(Enter.theValue("05-29-002024T05:00PM").into(CREATE_FECHAS_SALIDA));
+        actor.attemptsTo(Enter.theValue("05-30-002024T06:00PM").into(CREATE_FECHAS_LLEGADA));
         actor.attemptsTo(Enter.theValue("20000").into(CREATE_PRECIO));
         actor.attemptsTo(Enter.theValue("120").into(CREATE_PASAJEROS));
         actor.attemptsTo(Enter.theValue("5.2").into(CREATE_SOBRETASA));

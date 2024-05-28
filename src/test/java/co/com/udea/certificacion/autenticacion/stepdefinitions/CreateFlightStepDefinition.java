@@ -1,5 +1,6 @@
 package co.com.udea.certificacion.autenticacion.stepdefinitions;
 
+import co.com.udea.certificacion.autenticacion.questions.CreateConfirmQuestion;
 import co.com.udea.certificacion.autenticacion.tasks.EnterDataFormCreate;
 import co.com.udea.certificacion.autenticacion.tasks.OpenFormCreate;
 import co.com.udea.certificacion.autenticacion.tasks.OpenThe;
@@ -10,8 +11,10 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import net.serenitybdd.annotations.Managed;
 import net.serenitybdd.screenplay.Actor;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actors.OnlineCast;
+import org.hamcrest.Matchers;
 import org.openqa.selenium.WebDriver;
 
 import static net.serenitybdd.screenplay.actors.OnStage.setTheStage;
@@ -42,7 +45,14 @@ public class CreateFlightStepDefinition {
 
     @Then("el sistema confirma que el vuelo fue creado exitosamente")
     public void elSistemaConfirmaQueElVueloFueCreadoExitosamente() {
-
+       // admin.attemptsTo(VerifyCreateFom.verifyCreateFom());
+        GivenWhenThen.then(admin).should(GivenWhenThen.seeThat(CreateConfirmQuestion.withLocator(), Matchers.containsString("True")));
     }
+
+    /*
+    @Then("I can see the all the investment history")
+    public void iCanSeeTheInvestmentHistory(){
+        john.should(seeThat(TheHistoryInvestmentProposals.contains(),containsString(TITLE_HISTORY_INVESTMENT_PROPOSALS)));
+    }*/
 
 }

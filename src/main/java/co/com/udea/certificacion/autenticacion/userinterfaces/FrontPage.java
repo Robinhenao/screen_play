@@ -23,6 +23,8 @@ public class FrontPage extends PageObject {
 
     public static final Target BUTTON_GUARDAR = Target.the("BUTTON").locatedBy("//BUTTON[@type='submit'][text()='Guardar']/self::BUTTON");
 
+    public static final Target ALERT_CREATION = Target.the("ALERT").locatedBy("//DIV[text()='Flight created successfully']/self::DIV");
+
 
 
 }

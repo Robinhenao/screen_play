@@ -1,0 +1,251 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html lang="en"&gt;<br/>
+ &lt;head&gt;<br/>
+  &lt;meta charset="utf-8"&gt;<br/>
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;<br/>
+  &lt;link rel="stylesheet" href="/_next/static/css/131a1b70583dbdfb.css" crossorigin="" data-precedence="next"&gt;<br/>
+  &lt;link rel="preload" as="script" fetchpriority="low" href="/_next/static/chunks/webpack-2a064e086d618895.js" crossorigin=""&gt;<br/>
+  &lt;script src="/_next/static/chunks/fd9d1056-6606fef008716c77.js" async crossorigin=""&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/472-bc6881b546419b9b.js" async crossorigin=""&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/main-app-892c3dff08e9cd4c.js" async crossorigin=""&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/753-acc25f01dce17afc.js" async&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/app/gestion/lista/page-0229cfc54d99a403.js" async&gt;&lt;/script&gt;<br/>
+  &lt;script src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js" crossorigin="" nomodule=""&gt;&lt;/script&gt;<br/>
+ &lt;/head&gt;<br/>
+ &lt;body&gt;<br/>
+  &lt;nav class="relative bg-white shadow dark:bg-gray-800"&gt;<br/>
+   &lt;div class="container px-6 py-4 mx-auto"&gt;<br/>
+    &lt;div class="lg:flex lg:items-center lg:justify-between"&gt;<br/>
+     &lt;a href="#"&gt;&lt;h1 class="italic"&gt;Singapur Airlines&lt;/h1&gt;&lt;/a&gt;<br/>
+     &lt;svg xmlns="http://www.w3.org/2000/svg" width="0.88em" height="1em" viewbox="0 0 448 512"&gt;<br/>
+      &lt;path fill="currentColor" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128m89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4"&gt;&lt;/path&gt;<br/>
+     &lt;/svg&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/nav&gt;<br/>
+  &lt;div class="Toastify"&gt;&lt;/div&gt;<br/>
+  &lt;div class="relative flex justify-center"&gt;<br/>
+   &lt;div class="fixed inset-0 z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true"&gt;<br/>
+    &lt;div class="flex min-h-screen items-end justify-center px-4 pb-20 pt-4 text-center sm:block sm:p-0"&gt;<br/>
+     &lt;span class="hidden sm:inline-block sm:h-screen sm:align-middle" aria-hidden="true"&gt;​&lt;/span&gt;<br/>
+     &lt;div class="relative inline-block max-h-[85vh] overflow-auto rounded-lg bg-white px-4 pb-4 pt-5 text-left align-bottom shadow-xl transition-all dark:bg-gray-900 sm:my-8 sm:w-full sm:max-w-xl sm:p-6 sm:align-middle"&gt;<br/>
+      &lt;h3 class="text-center text-lg  font-medium capitalize leading-6 text-gray-800 dark:text-white" id="modal-title"&gt;Create Flight&lt;/h3&gt;<br/>
+      &lt;p class="mt-2 text-sm text-gray-500 dark:text-gray-400"&gt;Here you can create a flight&lt;/p&gt;<br/>
+      &lt;hr class="container my-3"&gt;<br/>
+      &lt;form class="mt-4" action="#"&gt;<br/>
+       &lt;label for="numeroVuelo" class="text-sm text-gray-700 dark:text-gray-200"&gt;Número de vuelo&lt;/label&gt;&lt;label class="block" for="numeroVuelo"&gt;&lt;input id="numeroVuelo" placeholder="Ej: Vuelo-123" class="block w-full rounded-md border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" type="text" name="numeroVuelo" value="ASB-123"&gt;&lt;/label&gt;&lt;label for="tipoVuelo" class="text-sm text-gray-700 dark:text-gray-200"&gt;Tipo de vuelo&lt;/label&gt;&lt;label class="block" for="tipoVuelo"&gt;&lt;input id="tipoVuelo" placeholder="Ej: Internacional" class="block w-full rounded-md border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" type="text" name="tipoVuelo" value="Internacional"&gt;&lt;/label&gt;&lt;label for="idAeropuertoOrigen" class="text-sm text-gray-700 dark:text-gray-200"&gt;Id Aeropuerto Origen&lt;/label&gt;&lt;label class="block" for="idAeropuertoOrigen"&gt;&lt;input id="idAeropuertoOrigen" placeholder="Ej: 1" class="block w-full rounded-md border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" type="number" name="idAeropuertoOrigen" value="1"&gt;&lt;/label&gt;&lt;label for="idAeropuertoDestino" class="text-sm text-gray-700 dark:text-gray-200"&gt;Id Aeropuerto Destino&lt;/label&gt;&lt;label class="block" for="idAeropuertoOrigen"&gt;&lt;input id="idAeropuertoDestino" placeholder="Ej: 2" class="block w-full rounded-md border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" type="number" name="idAeropuertoDestino" value="2"&gt;&lt;/label&gt;&lt;label for="idTipoAvion" class="text-sm text-gray-700 dark:text-gray-200"&gt;Id Tipo Avión&lt;/label&gt;&lt;label class="block" for="idTipoAvion"&gt;&lt;input id="idTipoAvion" placeholder="Ej: 2" class="block w-full rounded-md border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" type="number" name="idTipoAvion" value="2"&gt;&lt;/label&gt;&lt;label for="fechaSalida" class="text-sm text-gray-700 dark:text-gray-200"&gt;Fecha Salida&lt;/label&gt;&lt;label class="block" for="fechaSalida"&gt;&lt;input id="fechaSalida" class="block w-full rounded-md border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" type="datetime-local" name="fechaSalida"&gt;&lt;/label&gt;&lt;label for="fechaLlegada" class="text-sm text-gray-700 dark:text-gray-200"&gt;Fecha Llegada&lt;/label&gt;&lt;label class="block" for="fechaLlegada"&gt;&lt;input id="fechaLlegada" class="block w-full rounded-md border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" type="datetime-local" name="fechaLlegada"&gt;&lt;/label&gt;&lt;label for="precio" class="text-sm text-gray-700 dark:text-gray-200"&gt;Precio&lt;/label&gt;&lt;label class="block" for="precio"&gt;&lt;input id="precio" placeholder="Ej: 1000" class="block w-full rounded-md border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" type="number" name="precio" value="20000"&gt;&lt;/label&gt;&lt;label for="cantidadPasajeros" class="text-sm text-gray-700 dark:text-gray-200"&gt;Cantidad de Pasajeros&lt;/label&gt;&lt;label class="block" for="cantidadPasajeros"&gt;&lt;input id="cantidadPasajeros" placeholder="Ej: 1000" class="block w-full rounded-md border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" type="number" name="cantidadPasajeros" value="120"&gt;&lt;/label&gt;&lt;label for="sobretasa" class="text-sm text-gray-700 dark:text-gray-200"&gt;Sobretasa&lt;/label&gt;&lt;label class="block" for="sobretasa"&gt;&lt;input id="sobretasa" placeholder="Ej: 5.2" class="block w-full rounded-md border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" type="number" name="sobretasa" value="5.2"&gt;&lt;/label&gt;&lt;label for="porcentajeImpuestos" class="text-sm text-gray-700 dark:text-gray-200"&gt;Porcentaje de Impuestos&lt;/label&gt;&lt;label class="block" for="porcentajeImpuestos"&gt;&lt;input id="porcentajeImpuestos" placeholder="Ej: 10.5" class="block w-full rounded-md border border-gray-200 bg-white px-4 py-3 text-sm text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 dark:border-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:focus:border-blue-300" type="number" name="porcentajeImpuestos"&gt;&lt;/label&gt;<br/>
+       &lt;div class="mt-4 sm:-mx-2 sm:flex sm:items-center"&gt;<br/>
+        &lt;button type="button" class="w-full transform rounded-md border border-gray-200 px-4 py-2 text-sm font-medium capitalize tracking-wide text-gray-700 transition-colors duration-300 hover:bg-gray-100 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-40 dark:border-gray-700 dark:text-gray-200 dark:hover:bg-gray-800 sm:mx-2 sm:w-1/2"&gt;Cancel&lt;/button&gt;&lt;button type="submit" class="mt-3 w-full transform rounded-md bg-blue-600 px-4 py-2 text-sm font-medium capitalize tracking-wide text-white transition-colors duration-300 hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-40 sm:mx-2 sm:mt-0 sm:w-1/2"&gt;Guardar&lt;/button&gt;<br/>
+       &lt;/div&gt;<br/>
+      &lt;/form&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;section class="mx-auto rounded-md bg-white px-20  py-5 dark:bg-gray-800"&gt;<br/>
+   &lt;form&gt;<br/>
+    &lt;div class="mt-4 grid grid-cols-1 gap-10 px-5 sm:grid-cols-2"&gt;<br/>
+     &lt;div&gt;<br/>
+      &lt;label class="text-gray-700 dark:text-gray-200" for="no-vuelo"&gt;No Vuelo&lt;/label&gt;&lt;input id="no-vuelo" type="text" class="focus:ring-opacity-40/40 mt-2 block w-full rounded-md border border-gray-200 bg-white px-4 py-2 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:focus:border-blue-300"&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div&gt;<br/>
+      &lt;label class="text-gray-700 dark:text-gray-200" for="tipo-vuelo"&gt;Tipo de Vuelo&lt;/label&gt;&lt;input id="tipo-vuelo" type="email" class="focus:ring-opacity-40/40 mt-2 block w-full rounded-md border border-gray-200 bg-white px-4 py-2 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:focus:border-blue-300"&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div&gt;<br/>
+      &lt;label class="text-gray-700 dark:text-gray-200" for="ciudad-origen"&gt;Ciudad de Orígen&lt;/label&gt;&lt;input id="ciudad-origen" type="text" class="focus:ring-opacity-40/40 mt-2 block w-full rounded-md border border-gray-200 bg-white px-4 py-2 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:focus:border-blue-300"&gt;<br/>
+     &lt;/div&gt;<br/>
+     &lt;div&gt;<br/>
+      &lt;label class="text-gray-700 dark:text-gray-200" for="ciudad-destino"&gt;Ciudad de Destino&lt;/label&gt;&lt;input id="ciudad-destino" type="text" class="focus:ring-opacity-40/40 mt-2 block w-full rounded-md border border-gray-200 bg-white px-4 py-2 text-gray-700 focus:border-blue-400 focus:outline-none focus:ring focus:ring-blue-300 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-300 dark:focus:border-blue-300"&gt;<br/>
+     &lt;/div&gt;<br/>
+    &lt;/div&gt;<br/>
+    &lt;div class="mt-6 flex justify-end space-x-3 px-6"&gt;<br/>
+     &lt;button class="rounded-full bg-gray-700 px-8 py-2.5 leading-5 text-white transition-colors duration-300 hover:bg-gray-600 focus:bg-gray-600 focus:outline-none"&gt;Buscar&lt;/button&gt;&lt;button class="rounded-full bg-gray-700 px-8 py-2.5 leading-5 text-white transition-colors duration-300 hover:bg-gray-600 focus:bg-gray-600 focus:outline-none"&gt;Crear vuelo&lt;/button&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/form&gt;<br/>
+  &lt;/section&gt;<br/>
+  &lt;div class="mb-32 overflow-x-auto px-10"&gt;<br/>
+   &lt;table&gt;<br/>
+    &lt;thead&gt;<br/>
+     &lt;tr&gt;<br/>
+      &lt;th class="border-b-2 border-gray-200 bg-gray-100 px-5 py-3 text-left text-xs font-semibold uppercase tracking-wider text-gray-600"&gt;N° vuelo&lt;/th&gt;<br/>
+      &lt;th class="border-b-2 border-gray-200 bg-gray-100 px-5 py-3 text-left text-xs font-semibold uppercase tracking-wider text-gray-600"&gt;Tipo de Vuelo&lt;/th&gt;<br/>
+      &lt;th class="border-b-2 border-gray-200 bg-gray-100 px-5 py-3 text-left text-xs font-semibold uppercase tracking-wider text-gray-600"&gt;Aeropuerto Origen&lt;/th&gt;<br/>
+      &lt;th class="border-b-2 border-gray-200 bg-gray-100 px-5 py-3 text-left text-xs font-semibold uppercase tracking-wider text-gray-600"&gt;Aeropuerto Destino&lt;/th&gt;<br/>
+      &lt;th class="border-b-2 border-gray-200 bg-gray-100 px-5 py-3 text-left text-xs font-semibold uppercase tracking-wider text-gray-600"&gt;Tipo de Avión&lt;/th&gt;<br/>
+      &lt;th class="border-b-2 border-gray-200 bg-gray-100 px-5 py-3 text-left text-xs font-semibold uppercase tracking-wider text-gray-600"&gt;Fecha de Salida&lt;/th&gt;<br/>
+      &lt;th class="border-b-2 border-gray-200 bg-gray-100 px-5 py-3 text-left text-xs font-semibold uppercase tracking-wider text-gray-600"&gt;Fecha de Llegada&lt;/th&gt;<br/>
+      &lt;th class="border-b-2 border-gray-200 bg-gray-100 px-5 py-3 text-left text-xs font-semibold uppercase tracking-wider text-gray-600"&gt;Precio&lt;/th&gt;<br/>
+      &lt;th class="border-b-2 border-gray-200 bg-gray-100 px-5 py-3 text-left text-xs font-semibold uppercase tracking-wider text-gray-600"&gt;Cantidad de Pasajeros&lt;/th&gt;<br/>
+      &lt;th class="border-b-2 border-gray-200 bg-gray-100 px-5 py-3 text-left text-xs font-semibold uppercase tracking-wider text-gray-600"&gt;Sobretasa&lt;/th&gt;<br/>
+      &lt;th class="border-b-2 border-gray-200 bg-gray-100 px-5 py-3 text-left text-xs font-semibold uppercase tracking-wider text-gray-600"&gt;Porcentaje de Impuestos&lt;/th&gt;<br/>
+      &lt;th class="border-b-2 border-gray-200 bg-gray-100 px-5 py-3 text-left text-xs font-semibold uppercase tracking-wider text-gray-600"&gt;Acciones&lt;/th&gt;<br/>
+     &lt;/tr&gt;<br/>
+    &lt;/thead&gt;<br/>
+    &lt;tbody&gt;<br/>
+     &lt;tr&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;asb-123&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;internacional&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;2&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;1&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;2&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;26 de mayo de 2024&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;27 de mayo de 2024&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;1000&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;100&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;5.2&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;10.5&lt;/td&gt;<br/>
+      &lt;td class="flex flex-col space-y-2 border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;&lt;button class=" mx-1 rounded-full border-l bg-blue-500 px-5 py-2 text-white"&gt;Details&lt;/button&gt;&lt;button class=" mx-1 rounded-full border-l bg-yellow-500 px-5 py-2 text-white"&gt;Update&lt;/button&gt;&lt;button class="bold mx-1 rounded-full bg-red-500 px-5 py-2 text-white"&gt;Cancel&lt;/button&gt;&lt;/td&gt;<br/>
+     &lt;/tr&gt;<br/>
+     &lt;tr&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;vuelo-1234&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;internacional&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;1&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;2&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;1&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;31 de mayo de 2024&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;27 de mayo de 2024&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;1000&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;200&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;1&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;5&lt;/td&gt;<br/>
+      &lt;td class="flex flex-col space-y-2 border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;&lt;button class=" mx-1 rounded-full border-l bg-blue-500 px-5 py-2 text-white"&gt;Details&lt;/button&gt;&lt;button class=" mx-1 rounded-full border-l bg-yellow-500 px-5 py-2 text-white"&gt;Update&lt;/button&gt;&lt;button class="bold mx-1 rounded-full bg-red-500 px-5 py-2 text-white"&gt;Cancel&lt;/button&gt;&lt;/td&gt;<br/>
+     &lt;/tr&gt;<br/>
+     &lt;tr&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;vuelo-2233&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;nacional&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;2332&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;233&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;1&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;25 de mayo de 2024&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;25 de mayo de 2024&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;2323&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;23&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;23&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;2333&lt;/td&gt;<br/>
+      &lt;td class="flex flex-col space-y-2 border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;&lt;button class=" mx-1 rounded-full border-l bg-blue-500 px-5 py-2 text-white"&gt;Details&lt;/button&gt;&lt;button class=" mx-1 rounded-full border-l bg-yellow-500 px-5 py-2 text-white"&gt;Update&lt;/button&gt;&lt;button class="bold mx-1 rounded-full bg-red-500 px-5 py-2 text-white"&gt;Cancel&lt;/button&gt;&lt;/td&gt;<br/>
+     &lt;/tr&gt;<br/>
+     &lt;tr&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;122&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;12&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;23&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;22&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;2&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;31 de mayo de 2024&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;6 de junio de 2024&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;1&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;2&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;2&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;2&lt;/td&gt;<br/>
+      &lt;td class="flex flex-col space-y-2 border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;&lt;button class=" mx-1 rounded-full border-l bg-blue-500 px-5 py-2 text-white"&gt;Details&lt;/button&gt;&lt;button class=" mx-1 rounded-full border-l bg-yellow-500 px-5 py-2 text-white"&gt;Update&lt;/button&gt;&lt;button class="bold mx-1 rounded-full bg-red-500 px-5 py-2 text-white"&gt;Cancel&lt;/button&gt;&lt;/td&gt;<br/>
+     &lt;/tr&gt;<br/>
+     &lt;tr&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;03&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;23&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;23&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;232&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;23&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;31 de julio de 2024&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;1 de agosto de 2024&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;1&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;1&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;2&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;2&lt;/td&gt;<br/>
+      &lt;td class="flex flex-col space-y-2 border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;&lt;button class=" mx-1 rounded-full border-l bg-blue-500 px-5 py-2 text-white"&gt;Details&lt;/button&gt;&lt;button class=" mx-1 rounded-full border-l bg-yellow-500 px-5 py-2 text-white"&gt;Update&lt;/button&gt;&lt;button class="bold mx-1 rounded-full bg-red-500 px-5 py-2 text-white"&gt;Cancel&lt;/button&gt;&lt;/td&gt;<br/>
+     &lt;/tr&gt;<br/>
+     &lt;tr&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;12&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;23&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;23&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;22&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;3&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;7 de junio de 2024&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;8 de junio de 2024&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;2&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;2&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;22&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;2&lt;/td&gt;<br/>
+      &lt;td class="flex flex-col space-y-2 border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;&lt;button class=" mx-1 rounded-full border-l bg-blue-500 px-5 py-2 text-white"&gt;Details&lt;/button&gt;&lt;button class=" mx-1 rounded-full border-l bg-yellow-500 px-5 py-2 text-white"&gt;Update&lt;/button&gt;&lt;button class="bold mx-1 rounded-full bg-red-500 px-5 py-2 text-white"&gt;Cancel&lt;/button&gt;&lt;/td&gt;<br/>
+     &lt;/tr&gt;<br/>
+     &lt;tr&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;122&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;12&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;1&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;1&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;2&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;5 de junio de 2024&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;6 de junio de 2024&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;111&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;11&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;11&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;11&lt;/td&gt;<br/>
+      &lt;td class="flex flex-col space-y-2 border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;&lt;button class=" mx-1 rounded-full border-l bg-blue-500 px-5 py-2 text-white"&gt;Details&lt;/button&gt;&lt;button class=" mx-1 rounded-full border-l bg-yellow-500 px-5 py-2 text-white"&gt;Update&lt;/button&gt;&lt;button class="bold mx-1 rounded-full bg-red-500 px-5 py-2 text-white"&gt;Cancel&lt;/button&gt;&lt;/td&gt;<br/>
+     &lt;/tr&gt;<br/>
+     &lt;tr&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;nnn-123&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;internacional&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;2&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;1&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;2&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;28 de mayo de 2024&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;29 de mayo de 2024&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;11244&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;10000&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;5.2&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;10.5&lt;/td&gt;<br/>
+      &lt;td class="flex flex-col space-y-2 border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;&lt;button class=" mx-1 rounded-full border-l bg-blue-500 px-5 py-2 text-white"&gt;Details&lt;/button&gt;&lt;button class=" mx-1 rounded-full border-l bg-yellow-500 px-5 py-2 text-white"&gt;Update&lt;/button&gt;&lt;button class="bold mx-1 rounded-full bg-red-500 px-5 py-2 text-white"&gt;Cancel&lt;/button&gt;&lt;/td&gt;<br/>
+     &lt;/tr&gt;<br/>
+     &lt;tr&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;vuelo-2233&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;nacional&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;2332&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;233&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;3&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;28 de mayo de 2024&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;31 de mayo de 2024&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;2323&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;23&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;23&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;2333&lt;/td&gt;<br/>
+      &lt;td class="flex flex-col space-y-2 border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;&lt;button class=" mx-1 rounded-full border-l bg-blue-500 px-5 py-2 text-white"&gt;Details&lt;/button&gt;&lt;button class=" mx-1 rounded-full border-l bg-yellow-500 px-5 py-2 text-white"&gt;Update&lt;/button&gt;&lt;button class="bold mx-1 rounded-full bg-red-500 px-5 py-2 text-white"&gt;Cancel&lt;/button&gt;&lt;/td&gt;<br/>
+     &lt;/tr&gt;<br/>
+     &lt;tr&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;ggg-165&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;internacional&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;2&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;1&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;2&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;29 de mayo de 2024&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;31 de mayo de 2024&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;10000&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;122&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;5.2&lt;/td&gt;<br/>
+      &lt;td class="border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;10.5&lt;/td&gt;<br/>
+      &lt;td class="flex flex-col space-y-2 border-b border-gray-200 bg-white px-5 py-5 text-sm"&gt;&lt;button class=" mx-1 rounded-full border-l bg-blue-500 px-5 py-2 text-white"&gt;Details&lt;/button&gt;&lt;button class=" mx-1 rounded-full border-l bg-yellow-500 px-5 py-2 text-white"&gt;Update&lt;/button&gt;&lt;button class="bold mx-1 rounded-full bg-red-500 px-5 py-2 text-white"&gt;Cancel&lt;/button&gt;&lt;/td&gt;<br/>
+     &lt;/tr&gt;<br/>
+    &lt;/tbody&gt;<br/>
+   &lt;/table&gt;<br/>
+   &lt;div class="flex items-center justify-center p-3"&gt;<br/>
+    &lt;div class="mr-4"&gt;<br/>
+     &lt;label for="pageSize" class="mr-2 text-sm font-medium text-gray-700"&gt;Show&lt;/label&gt;&lt;select id="pageSize" class="px-2 py-1 border border-gray-300 rounded-md text-sm bg-white"&gt;&lt;option value="5"&gt;5&lt;/option&gt;&lt;option value="10"&gt;10&lt;/option&gt;&lt;option value="15"&gt;15&lt;/option&gt;&lt;option value="20"&gt;20&lt;/option&gt;&lt;/select&gt;<br/>
+    &lt;/div&gt;&lt;button disabled class="px-4 py-2 mx-1 text-sm font-medium text-gray-500 bg-white rounded-md border border-gray-300 hover:bg-gray-100 disabled:text-gray-300 disabled:bg-gray-50 disabled:border-gray-200"&gt;Previous&lt;/button&gt;&lt;button disabled class="px-4 py-2 mx-1 text-sm font-medium text-gray-300 bg-gray-50 border-gray-200 rounded-md"&gt;1&lt;/button&gt;&lt;button class="px-4 py-2 mx-1 text-sm font-medium text-gray-500 bg-white border-gray-300 hover:bg-gray-100 rounded-md"&gt;2&lt;/button&gt;&lt;button class="px-4 py-2 mx-1 text-sm font-medium text-gray-500 bg-white rounded-md border border-gray-300 hover:bg-gray-100 disabled:text-gray-300 disabled:bg-gray-50 disabled:border-gray-200"&gt;Next&lt;/button&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/div&gt;<br/>
+  &lt;footer class="fixed bottom-0 w-full"&gt;<br/>
+   &lt;div class=" bg-white"&gt;<br/>
+    &lt;div class="container mx-auto flex flex-col items-center justify-between space-y-4 p-6 sm:flex-row sm:space-y-0"&gt;<br/>
+     &lt;a href="#"&gt;&lt;h1 class="italic"&gt;Singapur Airlines&lt;/h1&gt;&lt;/a&gt;<br/>
+     &lt;p&gt;© Copyright 2021. All Rights Reserved.&lt;/p&gt;<br/>
+     &lt;svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewbox="0 0 36 36"&gt;<br/>
+      &lt;path fill="currentColor" d="M6.25 11.5L12 13.16l6.32-4.59l-9.07.26a.52.52 0 0 0-.25.08l-2.87 1.65a.51.51 0 0 0 .12.94" class="clr-i-solid clr-i-solid-path-1"&gt;&lt;/path&gt;&lt;path fill="currentColor" d="M34.52 6.36L28.22 5a3.78 3.78 0 0 0-3.07.67L6.12 19.5l-4.57-.2a1.25 1.25 0 0 0-.83 2.22l4.45 3.53a.55.55 0 0 0 .53.09c1.27-.49 6-3 11.59-6.07l1.12 11.51a.55.55 0 0 0 .9.37l2.5-2.08a.76.76 0 0 0 .26-.45l2.37-13.29c4-2.22 7.82-4.37 10.51-5.89a1.55 1.55 0 0 0-.43-2.88" class="clr-i-solid clr-i-solid-path-2"&gt;&lt;/path&gt;&lt;path fill="none" d="M0 0h36v36H0z"&gt;&lt;/path&gt;<br/>
+     &lt;/svg&gt;<br/>
+    &lt;/div&gt;<br/>
+   &lt;/div&gt;<br/>
+  &lt;/footer&gt;<br/>
+  &lt;script src="/_next/static/chunks/webpack-2a064e086d618895.js" crossorigin="" async&gt;&lt;/script&gt;<br/>
+  &lt;script&gt;(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])&lt;/script&gt;<br/>
+  &lt;script&gt;self.__next_f.push([1,"1:HL[\"/_next/static/css/131a1b70583dbdfb.css\",\"style\",{\"crossOrigin\":\"\"}]\n0:\"$L2\"\n"])&lt;/script&gt;<br/>
+  &lt;script&gt;self.__next_f.push([1,"3:I[3728,[],\"\"]\n5:I[9928,[],\"\"]\n6:I[6954,[],\"\"]\n7:I[7264,[],\"\"]\n9:I[8297,[],\"\"]\na:I[5776,[\"753\",\"static/chunks/753-acc25f01dce17afc.js\",\"50\",\"static/chunks/app/gestion/lista/page-0229cfc54d99a403.js\"],\"\"]\n"])&lt;/script&gt;<br/>
+  &lt;script&gt;self.__next_f.push([1,"2:[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/131a1b70583dbdfb.css\",\"precedence\":\"next\",\"crossOrigin\":\"\"}]],[\"$\",\"$L3\",null,{\"buildId\":\"mAvIMs4vKidCWAfKXpegA\",\"assetPrefix\":\"\",\"initialCanonicalUrl\":\"/gestion/lista\",\"initialTree\":[\"\",{\"children\":[\"gestion\",{\"children\":[\"lista\",{\"children\":[\"__PAGE__\",{}]}]}]},\"$undefined\",\"$undefined\",true],\"initialHead\":[false,\"$L4\"],\"globalErrorComponent\":\"$5\",\"children\":[null,[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"children\":[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"loadingScripts\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L7\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[],\"initialChildNode\":[null,[\"$\",\"html\",null,{\"lang\":\"en\",\"children\":[\"$\",\"body\",null,{\"children\":[[\"$\",\"nav\",null,{\"className\":\"relative bg-white shadow dark:bg-gray-800\",\"children\":[\"$\",\"div\",null,{\"className\":\"container px-6 py-4 mx-auto\",\"children\":[\"$\",\"div\",null,{\"className\":\"lg:flex lg:items-center lg:justify-between\",\"children\":[[\"$\",\"a\",null,{\"href\":\"#\",\"children\":[\"$\",\"h1\",null,{\"className\":\"italic\",\"children\":\"Singapur Airlines\"}]}],[\"$\",\"svg\",null,{\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":\"0.88em\",\"height\":\"1em\",\"viewBox\":\"0 0 448 512\",\"children\":[\"$\",\"path\",null,{\"fill\":\"currentColor\",\"d\":\"M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0S96 57.3 96 128s57.3 128 128 128m89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4\"}]}]]}]}]}],[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"gestion\",\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"loadingScripts\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L7\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\",\"initialChildNode\":[\"$\",\"$L6\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"gestion\",\"children\",\"lista\",\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"loadingScripts\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L7\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\",\"initialChildNode\":[\"$L8\",[\"$\",\"$L9\",null,{\"propsForComponent\":{\"params\":{}},\"Component\":\"$a\",\"isStaticGeneration\":true}],null],\"childPropSegment\":\"__PAGE__\",\"styles\":null}],\"childPropSegment\":\"lista\",\"styles\":null}],[\"$\",\"footer\",null,{\"className\":\"fixed bottom-0 w-full\",\"children\":[\"$\",\"div\",null,{\"className\":\" bg-white\",\"children\":[\"$\",\"div\",null,{\"className\":\"container mx-auto flex flex-col items-center justify-between space-y-4 p-6 sm:flex-row sm:space-y-0\",\"children\":[[\"$\",\"a\",null,{\"href\":\"#\",\"children\":[\"$\",\"h1\",null,{\"className\":\"italic\",\"children\":\"Singapur Airlines\"}]}],[\"$\",\"p\",null,{\"children\":\"© Copyright 2021. All Rights Reserved.\"}],[\"$\",\"svg\",null,{\"xmlns\":\"http://www.w3.org/2000/svg\",\"width\":\"1em\",\"height\":\"1em\",\"viewBox\":\"0 0 36 36\",\"children\":[[\"$\",\"path\",null,{\"fill\":\"currentColor\",\"d\":\"M6.25 11.5L12 13.16l6.32-4.59l-9.07.26a.52.52 0 0 0-.25.08l-2.87 1.65a.51.51 0 0 0 .12.94\",\"className\":\"clr-i-solid clr-i-solid-path-1\"}],[\"$\",\"path\",null,{\"fill\":\"currentColor\",\"d\":\"M34.52 6.36L28.22 5a3.78 3.78 0 0 0-3.07.67L6.12 19.5l-4.57-.2a1.25 1.25 0 0 0-.83 2.22l4.45 3.53a.55.55 0 0 0 .53.09c1.27-.49 6-3 11.59-6.07l1.12 11.51a.55.55 0 0 0 .9.37l2.5-2.08a.76.76 0 0 0 .26-.45l2.37-13.29c4-2.22 7.82-4.37 10.51-5.89a1.55 1.55 0 0 0-.43-2.88\",\"className\":\"clr-i-solid clr-i-solid-path-2\"}],[\"$\",\"path\",null,{\"fill\":\"none\",\"d\":\"M0 0h36v36H0z\"}]]}]]}]}]}]]}]}],null],\"childPropSegment\":\"gestion\",\"styles\":null}]}]}],null]}]]\n"])&lt;/script&gt;<br/>
+  &lt;script&gt;self.__next_f.push([1,"4:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}]]\n8:null\n"])&lt;/script&gt;<br/>
+  &lt;script&gt;self.__next_f.push([1,""])&lt;/script&gt;&lt;next-route-announcer style="position: absolute;"&gt;&lt;/next-route-announcer&gt;<br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
