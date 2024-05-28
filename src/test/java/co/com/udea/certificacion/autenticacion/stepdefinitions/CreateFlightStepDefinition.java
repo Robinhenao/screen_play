@@ -49,10 +49,5 @@ public class CreateFlightStepDefinition {
         GivenWhenThen.then(admin).should(GivenWhenThen.seeThat(CreateConfirmQuestion.withLocator(), Matchers.containsString("True")));
     }
 
-    /*
-    @Then("I can see the all the investment history")
-    public void iCanSeeTheInvestmentHistory(){
-        john.should(seeThat(TheHistoryInvestmentProposals.contains(),containsString(TITLE_HISTORY_INVESTMENT_PROPOSALS)));
-    }*/
 
 }
