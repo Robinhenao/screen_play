@@ -1,4 +1,4 @@
-#Author: Robinson, Alejo, John
+#Author: Robinson
   #Language: en
 
 Feature: Creacion de vuelos directos.

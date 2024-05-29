@@ -11,4 +11,3 @@ Feature:view existing flights
     When I go to the flight management page
     Then I can see the list of existing flights
 
-    #ViewExistingFlights

@@ -1,5 +1,8 @@
+#Author: John
+  #Language: en
+
 Feature: Eliminación de vuelos directos.
-  #Como administrador Quiero poder eliminar los vuelos que hayan sido creados
+  Como administrador Quiero poder cancelar los vuelos que hayan sido creados
 
   Scenario: Cancelacion exitosa de un vuelo
     Given estoy en la pagina de gestion de vuelos
