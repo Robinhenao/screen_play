@@ -1,4 +1,4 @@
-#Author: John
+#Author: Alejandro
   #Language: en
 
 Feature: Eliminación de vuelos directos.
